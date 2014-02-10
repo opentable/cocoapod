@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MATEventItem.h"
 
-#define MATVERSION @"3.0.1"
+#define MATVERSION @"3.0.2"
 
 
 #pragma mark - enumerated types
@@ -103,7 +103,8 @@ typedef enum {
  Set the Apple Advertising Identifier available in iOS 6.
  @param appleAdvertisingIdentifier - Apple Advertising Identifier
  */
-+ (void)setAppleAdvertisingIdentifier:(NSUUID *)appleAdvertisingIdentifier;
++ (void)setAppleAdvertisingIdentifier:(NSUUID *)appleAdvertisingIdentifier
+           advertisingTrackingEnabled:(BOOL)adTrackingEnabled;
 
 /*!
  Set the Apple Vendor Identifier available in iOS 6.
