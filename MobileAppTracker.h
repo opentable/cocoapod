@@ -2,7 +2,7 @@
 //  MobileAppTracker.h
 //  MobileAppTracker
 //
-//  Created by HasOffers on 10/30/13.
+//  Created by HasOffers on 02/10/14.
 //  Copyright (c) 2013 HasOffers. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MATEventItem.h"
 
-#define MATVERSION @"3.0.2"
+#define MATVERSION @"3.0.4"
 
 
 #pragma mark - enumerated types
@@ -143,7 +143,7 @@ typedef enum {
  Specifies if the sdk should pull the Apple Vendor Identifier from the device.
  YES/NO
  Note that setting to NO will clear any previously set value for the property.
- @param yesorno YES will set the Apple Vendor Identifier, defaults to NO.
+ @param yesorno YES will set the Apple Vendor Identifier, defaults to YES.
  */
 + (void)setShouldAutoGenerateAppleVendorIdentifier:(BOOL)yesorno;
 
@@ -160,10 +160,22 @@ typedef enum {
 + (void)setTRUSTeId:(NSString *)tpid;
 
 /*!
+ Sets the user's email address.
+ @param userEmail The user's email address.
+ */
++ (void)setUserEmail:(NSString *)userEmail;
+
+/*!
  Sets the user id.
  @param userId The string name for the user id.
  */
 + (void)setUserId:(NSString *)userId;
+
+/*!
+ Sets the user's name.
+ @param userName The user's name.
+ */
++ (void)setUserName:(NSString *)userName;
 
 /*!
  Set user's Facebook ID.
@@ -264,12 +276,12 @@ typedef enum {
  when an iAd is received or failed to display. The MobileAppTracker's delegate
  object will receive notifications when this happens.
  */
-- (void) displayiAdInView:(UIView *)view;
++ (void)displayiAdInView:(UIView *)view;
 
 /*!
  Removes the currently displayed iAd, if any.
  */
-- (void) removeiAd;
++ (void)removeiAd;
 
 
 #pragma mark - Track Install/Update Methods
