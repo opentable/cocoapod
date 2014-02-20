@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MATEventItem.h"
 
-#define MATVERSION @"3.0.4"
+#define MATVERSION @"3.0.5"
 
 
 #pragma mark - enumerated types
