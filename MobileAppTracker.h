@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "MATEventItem.h"
 
-#define MATVERSION @"3.0.5"
+#define MATVERSION @"3.0.6"
 
 
 #pragma mark - enumerated types
@@ -86,7 +86,7 @@ typedef enum {
 + (void)setAllowDuplicateRequests:(BOOL)yesorno;
 
 
-#pragma mark - Data Parameters
+#pragma mark - Data Setters
 
 /** @name Setter Methods */
 
@@ -265,6 +265,23 @@ typedef enum {
  @param value
  */
 + (void)setEventAttribute5:(NSString*)value;
+
+
+#pragma mark - Data Getters
+
+/** @name Getter Methods */
+
+/*!
+ Get the MAT ID for this installation (mat_id).
+ @return MAT ID
+ */
++ (NSString*)matId;
+
+/*!
+ Get the MAT log ID for the first app open (open_log_id).
+ @return open log ID
+ */
++ (NSString*)openLogId;
 
 
 #pragma mark - Show iAd advertising
