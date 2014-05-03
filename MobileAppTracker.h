@@ -384,7 +384,7 @@ typedef enum {
 /** @name Measuring Sessions */
 
 /*!
- To be called when an app opens; typically in the didFinishLaunching event.
+ To be called when an app opens; typically in the applicationDidBecomeActive event.
  */
 + (void)measureSession;
 
