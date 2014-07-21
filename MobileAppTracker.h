@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 
 #import "MATEventItem.h"
 
-#define MATVERSION @"3.2.5"
+#ifdef MAT_USE_LOCATION
+#import <CoreLocation/CoreLocation.h>
+#endif
+
+#define MATVERSION @"3.3"
 
 
 #pragma mark - enumerated types
@@ -38,6 +41,9 @@ typedef enum {
 
 
 @protocol MobileAppTrackerDelegate;
+#ifdef MAT_USE_LOCATION
+@protocol MobileAppTrackerRegionDelegate;
+#endif
 
 /*!
  MobileAppTracker provides the methods to send events and actions to the
@@ -66,6 +72,14 @@ typedef enum {
  */
 + (void)setDelegate:(id <MobileAppTrackerDelegate>)delegate;
 
+#ifdef MAT_USE_LOCATION
+/** @name MAT SDK Region Delegate */
+/*!
+ [MobileAppTrackerRegionDelegate](MobileAppTrackerRegionDelegate) : A delegate used by the MobileAppTracker
+ to post geofencing boundary notifications.
+ */
++ (void)setRegionDelegate:(id <MobileAppTrackerRegionDelegate>)delegate;
+#endif
 
 #pragma mark - Debug And Test
 
@@ -567,6 +581,31 @@ typedef enum {
  */
 + (void)applicationDidOpenURL:(NSString *)urlString sourceApplication:(NSString *)sourceApplication;
 
+
+#ifdef MAT_USE_LOCATION
+#pragma mark - Region Monitoring
+
+/** @name Region monitoring */
+
+/*!
+ Begin monitoring for an iBeacon region. Boundary-crossing events will be recorded
+ by the MAT servers for event attribution.
+ 
+ When the first region is added, the user will immediately be prompted for use of
+ their location, unless they have already granted it to the app.
+ 
+ @param UUID The region's universal unique identifier (required).
+ @param nameId The region's name, as programmed into the beacon (required).
+ @param majorId A subregion's major identifier (optional, send 0)
+ @param minorId A sub-subregion's minor identifier (optional, send 0)
+ */
+
++ (void)startMonitoringForBeaconRegion:(NSUUID*)UUID
+                                nameId:(NSString*)nameId
+                               majorId:(NSUInteger)majorId
+                               minorId:(NSUInteger)minorId;
+#endif
+
 @end
 
 
@@ -618,3 +657,31 @@ typedef enum {
 
 @end
 
+
+#ifdef MAT_USE_LOCATION
+#pragma mark - MobileAppTrackerRegionDelegate
+
+/** @name MobileAppTrackerRegionDelegate */
+
+/*!
+ Protocol that allows for callbacks from the MobileAppTracker region-based
+ methods. Delegate methods are called on an arbitrary thread.
+ */
+
+@protocol MobileAppTrackerRegionDelegate <NSObject>
+@optional
+
+/*!
+ Delegate method called when a geofenced region is entered.
+ @param region The region that was entered.
+ */
+- (void)mobileAppTrackerDidEnterRegion:(CLRegion*)region;
+
+/*!
+ Delegate method called when a geofenced region is exited.
+ @param region The region that was exited.
+ */
+- (void)mobileAppTrackerDidExitRegion:(CLRegion*)region;
+
+@end
+#endif
