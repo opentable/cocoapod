@@ -1,6 +1,6 @@
 {
   "name": "MobileAppTracker",
-  "version": "3.5",
+  "version": "3.5.1",
   "summary": "SDK for MobileAppTracking platform",
   "description": "The MobileAppTracking SDK for iOS provides app session and in-app event measuring capabilities.",
   "homepage": "https://developers.mobileapptracking.com/ios-sdk",
@@ -13,15 +13,15 @@
   },
   "source": {
     "git": "https://github.com/MobileAppTracking/cocoapod.git",
-    "tag": "3.5"
+    "tag": "3.5.1"
   },
   "platforms": {
-    "ios": "5.0"
+    "ios": "5.1.1"
   },
   "source_files": "*.h",
   "preserve_paths": "*.a",
   "public_header_files": "*.h",
-  "libraries": "MobileAppTracker-3.5",
+  "libraries": "MobileAppTracker-3.5.1",
   "xcconfig": {
     "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/MobileAppTracker\""
   },
