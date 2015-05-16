@@ -21,7 +21,7 @@
 /*!
  Event ID of the event as defined on the MobileAppTracking dashboard
  */
-@property (nonatomic, assign) NSInteger eventId;
+@property (nonatomic, assign, readonly) NSInteger eventId;
 
 /*!
  An array of MATEventItem items
@@ -87,12 +87,12 @@
 /*!
  First date associated with the event (e.g., user's check-in time)
  */
-@property (nonatomic, assign) NSDate *date1;
+@property (nonatomic, strong) NSDate *date1;
 
 /*!
  Second date associated with the next action (e.g., user's check-out time)
  */
-@property (nonatomic, assign) NSDate *date2;
+@property (nonatomic, strong) NSDate *date2;
 
 /*!
  First custom string attribute for the event

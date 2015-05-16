@@ -19,7 +19,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #endif
 
-#define MATVERSION @"3.9"
+#define MATVERSION @"3.9.1"
 
 
 #pragma mark - enumerated types
@@ -617,7 +617,7 @@ typedef NS_ENUM(NSInteger, MATGender)
 
 /** @name Cookie Tracking */
 /*!
- Sets whether or not to user cookie based tracking.
+ Sets whether or not to use cookie based tracking.
  Default: NO
  @param enable YES/NO for cookie based tracking.
  */
