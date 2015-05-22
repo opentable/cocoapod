@@ -21,7 +21,7 @@
   "source_files": "*.h",
   "preserve_paths": "*.a",
   "public_header_files": "*.h",
-  "libraries": "MobileAppTracker-3.9.1",
+  "vendored_libraries": "MobileAppTracker-3.9.1",
   "xcconfig": {
     "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/MobileAppTracker\""
   },
