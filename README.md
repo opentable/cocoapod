@@ -33,7 +33,7 @@ Once you install a pod dependency in your project, make sure to always open the 
     
 Now you can import MobileAppTracker in your source files:
 
-    #import <MobileAppTracker.h>
+    @import MobileAppTracker;
     
 At this point MAT iOS SDK is ready for use in your project.
 
