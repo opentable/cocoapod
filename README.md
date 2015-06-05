@@ -26,11 +26,11 @@ This sample shows a minimal Podfile that you can use to include MAT iOS SDK depe
 Now you can install the dependencies in your project:
 
     $ pod install
-    
+
 Once you install a pod dependency in your project, make sure to always open the Xcode workspace instead of the project file when building your project:
 
     $ open App.xcworkspace
-    
+
 Now you can import MobileAppTracker in your source files:
 
     @import MobileAppTracker;
@@ -38,13 +38,12 @@ Now you can import MobileAppTracker in your source files:
 OR
 
     #import <MobileAppTracker/MobileAppTracker.h>
-    
+
 At this point MAT iOS SDK is ready for use in your project.
 
 
 ### Next Steps
 
-Refer [MAT SDK Integration Document](http://support.mobileapptracking.com/entries/23745301-iOS-SDK-v2-6-1) for help on tracking installs and events using the MAT iOS SDK.
-    
+Refer [MAT SDK Integration Document](https://developers.mobileapptracking.com/ios-sdk/) for help on measuring installs and events using the MAT iOS SDK.
 
 
