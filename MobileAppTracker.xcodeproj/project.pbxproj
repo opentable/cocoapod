@@ -11,6 +11,12 @@
 		003631341B27D750007691A1 /* libMobileAppTracker-3.5.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631311B27D750007691A1 /* libMobileAppTracker-3.5.4.a */; };
 		003631351B27D750007691A1 /* MATEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631321B27D750007691A1 /* MATEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003631361B27D750007691A1 /* MobileAppTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631331B27D750007691A1 /* MobileAppTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0036313A1B27DBC2007691A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631391B27DBC2007691A1 /* Foundation.framework */; };
+		0036313C1B27DBCD007691A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036313B1B27DBCD007691A1 /* UIKit.framework */; };
+		0036313E1B27DBD6007691A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036313D1B27DBD6007691A1 /* SystemConfiguration.framework */; };
+		003631421B27DBE9007691A1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631411B27DBE9007691A1 /* iAd.framework */; };
+		003631441B27DBF0007691A1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631431B27DBF0007691A1 /* CoreTelephony.framework */; };
+		003631461B27DC45007691A1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631451B27DC45007691A1 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,13 @@
 		003631311B27D750007691A1 /* libMobileAppTracker-3.5.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMobileAppTracker-3.5.4.a"; sourceTree = "<group>"; };
 		003631321B27D750007691A1 /* MATEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATEventItem.h; sourceTree = "<group>"; };
 		003631331B27D750007691A1 /* MobileAppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileAppTracker.h; sourceTree = "<group>"; };
+		003631391B27DBC2007691A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0036313B1B27DBCD007691A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0036313D1B27DBD6007691A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0036313F1B27DBDF007691A1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		003631411B27DBE9007691A1 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		003631431B27DBF0007691A1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		003631451B27DC45007691A1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003631461B27DC45007691A1 /* MobileCoreServices.framework in Frameworks */,
+				003631441B27DBF0007691A1 /* CoreTelephony.framework in Frameworks */,
+				003631421B27DBE9007691A1 /* iAd.framework in Frameworks */,
+				0036313E1B27DBD6007691A1 /* SystemConfiguration.framework in Frameworks */,
+				0036313C1B27DBCD007691A1 /* UIKit.framework in Frameworks */,
+				0036313A1B27DBC2007691A1 /* Foundation.framework in Frameworks */,
 				003631341B27D750007691A1 /* libMobileAppTracker-3.5.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +58,13 @@
 		0036310B1B27D6F5007691A1 = {
 			isa = PBXGroup;
 			children = (
+				003631451B27DC45007691A1 /* MobileCoreServices.framework */,
+				003631431B27DBF0007691A1 /* CoreTelephony.framework */,
+				003631411B27DBE9007691A1 /* iAd.framework */,
+				0036313F1B27DBDF007691A1 /* AdSupport.framework */,
+				0036313D1B27DBD6007691A1 /* SystemConfiguration.framework */,
+				0036313B1B27DBCD007691A1 /* UIKit.framework */,
+				003631391B27DBC2007691A1 /* Foundation.framework */,
 				003631171B27D6F5007691A1 /* MobileAppTracker */,
 				003631241B27D6F5007691A1 /* MobileAppTrackerTests */,
 				003631161B27D6F5007691A1 /* Products */,
