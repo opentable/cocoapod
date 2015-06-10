@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0036311B1B27D6F5007691A1 /* MobileAppTrackerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0036311A1B27D6F5007691A1 /* MobileAppTrackerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		003631341B27D750007691A1 /* libMobileAppTracker-3.5.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631311B27D750007691A1 /* libMobileAppTracker-3.5.4.a */; };
-		003631351B27D750007691A1 /* MATEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631321B27D750007691A1 /* MATEventItem.h */; };
-		003631361B27D750007691A1 /* MobileAppTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631331B27D750007691A1 /* MobileAppTracker.h */; };
+		003631351B27D750007691A1 /* MATEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631321B27D750007691A1 /* MATEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003631361B27D750007691A1 /* MobileAppTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631331B27D750007691A1 /* MobileAppTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
