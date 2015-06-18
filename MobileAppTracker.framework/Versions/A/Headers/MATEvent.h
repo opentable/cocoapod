@@ -11,6 +11,95 @@
 
 #import "MATEventItem.h"
 
+/*!
+ MobileAppTracking pre-defined event string "achievement_unlocked"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_ACHIEVEMENT_UNLOCKED;
+
+/*!
+ MobileAppTracking pre-defined event string "add_to_cart"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_ADD_TO_CART;
+
+/*!
+ MobileAppTracking pre-defined event string "add_to_wishlist"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_ADD_TO_WISHLIST;
+
+/*!
+ MobileAppTracking pre-defined event string "added_payment_info"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_ADDED_PAYMENT_INFO;
+
+/*!
+ MobileAppTracking pre-defined event string "checkout_initiated"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_CHECKOUT_INITIATED;
+
+/*!
+ MobileAppTracking pre-defined event string "content_view"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_CONTENT_VIEW;
+
+/*!
+ MobileAppTracking pre-defined event string "invite"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_INVITE;
+
+/*!
+ MobileAppTracking pre-defined event string "level_achieved"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_LEVEL_ACHIEVED;
+
+/*!
+ MobileAppTracking pre-defined event string "login"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_LOGIN;
+
+/*!
+ MobileAppTracking pre-defined event string "purchase"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_PURCHASE;
+
+/*!
+ MobileAppTracking pre-defined event string "rated"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_RATED;
+
+/*!
+ MobileAppTracking pre-defined event string "registration"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_REGISTRATION;
+
+/*!
+ MobileAppTracking pre-defined event string "reservation"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_RESERVATION;
+
+/*!
+ MobileAppTracking pre-defined event string "search"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_SEARCH;
+
+/*!
+ MobileAppTracking pre-defined event string "share"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_SHARE;
+
+/*!
+ MobileAppTracking pre-defined event string "spent_credits"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_SPENT_CREDITS;
+
+/*!
+ MobileAppTracking pre-defined event string "tutorial_complete"
+ */
+FOUNDATION_EXPORT NSString *const MAT_EVENT_TUTORIAL_COMPLETE;
+
+
+/*!
+ An event to be measured using MobileAppTracker. Allows various properties to be set for each individual instance.
+ */
 @interface MATEvent : NSObject
 
 /*!

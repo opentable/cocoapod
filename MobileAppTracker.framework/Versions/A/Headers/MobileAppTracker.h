@@ -19,7 +19,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #endif
 
-#define MATVERSION @"3.9.1"
+#define MATVERSION @"3.9.3"
 
 
 #pragma mark - enumerated types
@@ -53,7 +53,7 @@ typedef NS_ENUM(NSInteger, MATGender)
 
 /*!
  MobileAppTracker provides the methods to send events and actions to the
- HasOffers servers.
+ MobileAppTracking servers.
  */
 @interface MobileAppTracker : NSObject
 

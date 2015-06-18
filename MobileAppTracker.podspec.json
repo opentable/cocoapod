@@ -1,6 +1,6 @@
 {
   "name": "MobileAppTracker",
-  "version": "3.9.1",
+  "version": "3.9.3",
   "summary": "SDK for TUNE MobileAppTracking platform",
   "description": "The TUNE MobileAppTracking SDK for iOS provides app session and in-app event measuring capabilities.",
   "homepage": "https://developers.mobileapptracking.com/ios-sdk",
@@ -13,17 +13,13 @@
   },
   "source": {
     "git": "https://github.com/MobileAppTracking/cocoapod.git",
-    "tag": "3.9.1"
+    "tag": "3.9.3"
   },
   "platforms": {
     "ios": "5.1.1"
   },
-  "preserve_paths": "*.framework",
+  "preserve_paths": "MobileAppTracker.framework",
   "vendored_frameworks": "MobileAppTracker.framework",
-  "module_name": "MobileAppTracker",
-  "xcconfig": {
-    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)\""
-  },
   "frameworks": [
     "AdSupport",
     "CoreTelephony",
