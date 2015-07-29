@@ -18,7 +18,7 @@ If you have already installed CocoaPods then you can skip this step.
 Once CocoaPods has been installed, you can include MAT iOS SDK to your project by adding a dependency entry to the Podfile in your project root directory.
 
     $ edit Podfile
-    platform :ios
+    platform :ios, '8.0'
     pod 'MobileAppTracker'
 
 This sample shows a minimal Podfile that you can use to include MAT iOS SDK dependency to your project. You can include any other dependency as required by your project.
