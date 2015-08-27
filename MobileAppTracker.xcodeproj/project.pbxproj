@@ -8,15 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0036311B1B27D6F5007691A1 /* MobileAppTrackerFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 0036311A1B27D6F5007691A1 /* MobileAppTrackerFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003631341B27D750007691A1 /* libMobileAppTracker-3.5.4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631311B27D750007691A1 /* libMobileAppTracker-3.5.4.a */; };
-		003631351B27D750007691A1 /* MATEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631321B27D750007691A1 /* MATEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		003631361B27D750007691A1 /* MobileAppTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 003631331B27D750007691A1 /* MobileAppTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0036313A1B27DBC2007691A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631391B27DBC2007691A1 /* Foundation.framework */; };
 		0036313C1B27DBCD007691A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036313B1B27DBCD007691A1 /* UIKit.framework */; };
 		0036313E1B27DBD6007691A1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0036313D1B27DBD6007691A1 /* SystemConfiguration.framework */; };
 		003631421B27DBE9007691A1 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631411B27DBE9007691A1 /* iAd.framework */; };
 		003631441B27DBF0007691A1 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631431B27DBF0007691A1 /* CoreTelephony.framework */; };
 		003631461B27DC45007691A1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003631451B27DC45007691A1 /* MobileCoreServices.framework */; };
+		007DC22E1B8FD79300112426 /* MobileAppTracker in Frameworks */ = {isa = PBXBuildFile; fileRef = 007DC22D1B8FD79300112426 /* MobileAppTracker */; };
+		007DC2321B8FD7A900112426 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007DC2311B8FD7A900112426 /* StoreKit.framework */; };
+		007DC2401B8FD7D600112426 /* MATEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2331B8FD7D600112426 /* MATEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2411B8FD7D600112426 /* MATEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2341B8FD7D600112426 /* MATEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2421B8FD7D600112426 /* MATPreloadData.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2351B8FD7D600112426 /* MATPreloadData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2431B8FD7D600112426 /* MobileAppTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2361B8FD7D600112426 /* MobileAppTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2441B8FD7D600112426 /* Tune.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2371B8FD7D600112426 /* Tune.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2451B8FD7D600112426 /* TuneAdMetadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2381B8FD7D600112426 /* TuneAdMetadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2461B8FD7D600112426 /* TuneAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC2391B8FD7D600112426 /* TuneAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2471B8FD7D600112426 /* TuneBanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC23A1B8FD7D600112426 /* TuneBanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2481B8FD7D600112426 /* TuneEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC23B1B8FD7D600112426 /* TuneEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC2491B8FD7D600112426 /* TuneEventItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC23C1B8FD7D600112426 /* TuneEventItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC24A1B8FD7D600112426 /* TuneInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC23D1B8FD7D600112426 /* TuneInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC24B1B8FD7D600112426 /* TuneLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC23E1B8FD7D600112426 /* TuneLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		007DC24C1B8FD7D600112426 /* TunePreloadData.h in Headers */ = {isa = PBXBuildFile; fileRef = 007DC23F1B8FD7D600112426 /* TunePreloadData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +37,6 @@
 		0036311A1B27D6F5007691A1 /* MobileAppTrackerFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileAppTrackerFramework.h; sourceTree = "<group>"; };
 		003631261B27D6F5007691A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		003631271B27D6F5007691A1 /* MobileAppTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileAppTrackerTests.m; sourceTree = "<group>"; };
-		003631311B27D750007691A1 /* libMobileAppTracker-3.5.4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libMobileAppTracker-3.5.4.a"; sourceTree = "<group>"; };
-		003631321B27D750007691A1 /* MATEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MATEventItem.h; sourceTree = "<group>"; };
-		003631331B27D750007691A1 /* MobileAppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileAppTracker.h; sourceTree = "<group>"; };
 		003631391B27DBC2007691A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0036313B1B27DBCD007691A1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0036313D1B27DBD6007691A1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -35,6 +44,22 @@
 		003631411B27DBE9007691A1 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		003631431B27DBF0007691A1 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		003631451B27DC45007691A1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		007DC22D1B8FD79300112426 /* MobileAppTracker */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = MobileAppTracker; path = MobileAppTracker.framework/Versions/A/MobileAppTracker; sourceTree = SOURCE_ROOT; };
+		007DC22F1B8FD7A100112426 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		007DC2311B8FD7A900112426 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		007DC2331B8FD7D600112426 /* MATEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MATEvent.h; path = MobileAppTracker.framework/Versions/A/Headers/MATEvent.h; sourceTree = SOURCE_ROOT; };
+		007DC2341B8FD7D600112426 /* MATEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MATEventItem.h; path = MobileAppTracker.framework/Versions/A/Headers/MATEventItem.h; sourceTree = SOURCE_ROOT; };
+		007DC2351B8FD7D600112426 /* MATPreloadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MATPreloadData.h; path = MobileAppTracker.framework/Versions/A/Headers/MATPreloadData.h; sourceTree = SOURCE_ROOT; };
+		007DC2361B8FD7D600112426 /* MobileAppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MobileAppTracker.h; path = MobileAppTracker.framework/Versions/A/Headers/MobileAppTracker.h; sourceTree = SOURCE_ROOT; };
+		007DC2371B8FD7D600112426 /* Tune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tune.h; path = MobileAppTracker.framework/Versions/A/Headers/Tune.h; sourceTree = SOURCE_ROOT; };
+		007DC2381B8FD7D600112426 /* TuneAdMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneAdMetadata.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneAdMetadata.h; sourceTree = SOURCE_ROOT; };
+		007DC2391B8FD7D600112426 /* TuneAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneAdView.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneAdView.h; sourceTree = SOURCE_ROOT; };
+		007DC23A1B8FD7D600112426 /* TuneBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneBanner.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneBanner.h; sourceTree = SOURCE_ROOT; };
+		007DC23B1B8FD7D600112426 /* TuneEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneEvent.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneEvent.h; sourceTree = SOURCE_ROOT; };
+		007DC23C1B8FD7D600112426 /* TuneEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneEventItem.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneEventItem.h; sourceTree = SOURCE_ROOT; };
+		007DC23D1B8FD7D600112426 /* TuneInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneInterstitial.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneInterstitial.h; sourceTree = SOURCE_ROOT; };
+		007DC23E1B8FD7D600112426 /* TuneLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TuneLocation.h; path = MobileAppTracker.framework/Versions/A/Headers/TuneLocation.h; sourceTree = SOURCE_ROOT; };
+		007DC23F1B8FD7D600112426 /* TunePreloadData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TunePreloadData.h; path = MobileAppTracker.framework/Versions/A/Headers/TunePreloadData.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +67,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007DC2321B8FD7A900112426 /* StoreKit.framework in Frameworks */,
 				003631461B27DC45007691A1 /* MobileCoreServices.framework in Frameworks */,
 				003631441B27DBF0007691A1 /* CoreTelephony.framework in Frameworks */,
 				003631421B27DBE9007691A1 /* iAd.framework in Frameworks */,
 				0036313E1B27DBD6007691A1 /* SystemConfiguration.framework in Frameworks */,
+				007DC22E1B8FD79300112426 /* MobileAppTracker in Frameworks */,
 				0036313C1B27DBCD007691A1 /* UIKit.framework in Frameworks */,
 				0036313A1B27DBC2007691A1 /* Foundation.framework in Frameworks */,
-				003631341B27D750007691A1 /* libMobileAppTracker-3.5.4.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +84,8 @@
 		0036310B1B27D6F5007691A1 = {
 			isa = PBXGroup;
 			children = (
+				007DC2311B8FD7A900112426 /* StoreKit.framework */,
+				007DC22F1B8FD7A100112426 /* PassKit.framework */,
 				003631451B27DC45007691A1 /* MobileCoreServices.framework */,
 				003631431B27DBF0007691A1 /* CoreTelephony.framework */,
 				003631411B27DBE9007691A1 /* iAd.framework */,
@@ -82,10 +110,21 @@
 		003631171B27D6F5007691A1 /* MobileAppTracker */ = {
 			isa = PBXGroup;
 			children = (
+				007DC22D1B8FD79300112426 /* MobileAppTracker */,
 				0036311A1B27D6F5007691A1 /* MobileAppTrackerFramework.h */,
-				003631311B27D750007691A1 /* libMobileAppTracker-3.5.4.a */,
-				003631321B27D750007691A1 /* MATEventItem.h */,
-				003631331B27D750007691A1 /* MobileAppTracker.h */,
+				007DC2331B8FD7D600112426 /* MATEvent.h */,
+				007DC2341B8FD7D600112426 /* MATEventItem.h */,
+				007DC2351B8FD7D600112426 /* MATPreloadData.h */,
+				007DC2361B8FD7D600112426 /* MobileAppTracker.h */,
+				007DC2371B8FD7D600112426 /* Tune.h */,
+				007DC2381B8FD7D600112426 /* TuneAdMetadata.h */,
+				007DC2391B8FD7D600112426 /* TuneAdView.h */,
+				007DC23A1B8FD7D600112426 /* TuneBanner.h */,
+				007DC23B1B8FD7D600112426 /* TuneEvent.h */,
+				007DC23C1B8FD7D600112426 /* TuneEventItem.h */,
+				007DC23D1B8FD7D600112426 /* TuneInterstitial.h */,
+				007DC23E1B8FD7D600112426 /* TuneLocation.h */,
+				007DC23F1B8FD7D600112426 /* TunePreloadData.h */,
 				003631181B27D6F5007691A1 /* Supporting Files */,
 			);
 			path = MobileAppTracker;
@@ -123,9 +162,20 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007DC2401B8FD7D600112426 /* MATEvent.h in Headers */,
+				007DC2481B8FD7D600112426 /* TuneEvent.h in Headers */,
+				007DC24B1B8FD7D600112426 /* TuneLocation.h in Headers */,
+				007DC2431B8FD7D600112426 /* MobileAppTracker.h in Headers */,
+				007DC24C1B8FD7D600112426 /* TunePreloadData.h in Headers */,
+				007DC2451B8FD7D600112426 /* TuneAdMetadata.h in Headers */,
+				007DC24A1B8FD7D600112426 /* TuneInterstitial.h in Headers */,
+				007DC2441B8FD7D600112426 /* Tune.h in Headers */,
+				007DC2421B8FD7D600112426 /* MATPreloadData.h in Headers */,
+				007DC2491B8FD7D600112426 /* TuneEventItem.h in Headers */,
+				007DC2471B8FD7D600112426 /* TuneBanner.h in Headers */,
 				0036311B1B27D6F5007691A1 /* MobileAppTrackerFramework.h in Headers */,
-				003631361B27D750007691A1 /* MobileAppTracker.h in Headers */,
-				003631351B27D750007691A1 /* MATEventItem.h in Headers */,
+				007DC2461B8FD7D600112426 /* TuneAdView.h in Headers */,
+				007DC2411B8FD7D600112426 /* MATEventItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +354,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobileAppTracker",
+					"$(PROJECT_DIR)/MobileAppTracker.framework/Versions/A",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,6 +376,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MobileAppTracker",
+					"$(PROJECT_DIR)/MobileAppTracker.framework/Versions/A",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

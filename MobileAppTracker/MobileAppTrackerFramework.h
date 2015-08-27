@@ -18,3 +18,12 @@ FOUNDATION_EXPORT const unsigned char MobileAppTrackerVersionString[];
 
 #import <MobileAppTrackerFramework/MobileAppTracker.h>
 #import <MobileAppTrackerFramework/MATEventItem.h>
+#import <MobileAppTrackerFramework/Tune.h>
+#import <MobileAppTrackerFramework/TuneAdMetadata.h>
+#import <MobileAppTrackerFramework/TuneAdView.h>
+#import <MobileAppTrackerFramework/TuneBanner.h>
+#import <MobileAppTrackerFramework/TuneEvent.h>
+#import <MobileAppTrackerFramework/TuneEventItem.h>
+#import <MobileAppTrackerFramework/TuneInterstitial.h>
+#import <MobileAppTrackerFramework/TuneLocation.h>
+#import <MobileAppTrackerFramework/TunePreloadData.h>
