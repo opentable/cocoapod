@@ -1,35 +1,31 @@
 {
   "name": "MobileAppTracker",
-  "version": "3.5.4",
-  "summary": "SDK for MobileAppTracking platform",
-  "description": "The MobileAppTracking SDK for iOS provides app session and in-app event measuring capabilities.",
+  "version": "3.11.0",
+  "summary": "SDK for TUNE MobileAppTracking platform",
+  "description": "The TUNE MobileAppTracking SDK for iOS provides app session measurement, in-app event measurement, and app cross-promotion advertisement capabilities.",
   "homepage": "https://developers.mobileapptracking.com/ios-sdk",
   "license": {
     "type": "Apache License, Version 2.0",
     "file": "LICENSE"
   },
   "authors": {
-    "HasOffers, Inc.": "support@mobileapptracking.com"
+    "TUNE, Inc.": "support@mobileapptracking.com"
   },
   "source": {
     "git": "https://github.com/MobileAppTracking/cocoapod.git",
-    "tag": "3.5.4"
+    "tag": "3.11.0"
   },
   "platforms": {
     "ios": "5.1.1"
   },
-  "source_files": "*.h",
-  "preserve_paths": "*.a",
-  "public_header_files": "*.h",
-  "libraries": "MobileAppTracker-3.5.4",
-  "xcconfig": {
-    "LIBRARY_SEARCH_PATHS": "\"$(PODS_ROOT)/MobileAppTracker\""
-  },
+  "preserve_paths": "MobileAppTracker.framework",
+  "vendored_frameworks": "MobileAppTracker.framework",
   "frameworks": [
     "AdSupport",
     "CoreTelephony",
     "iAd",
     "MobileCoreServices",
+    "StoreKit",
     "SystemConfiguration",
     "UIKit"
   ],
